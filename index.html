@@ -29,7 +29,7 @@
 <p>
 Following are instructions to install Orange data mining suite we will use at the workshop. If you have any questions or any problems with installation, you are welcome to visit us at the Installation Clinic on Friday, Monday or Tuesday (May 16, 18, or 19) at Baylor College of Medicine, Smith Building, room S921 (Blaz Zupan and Marinka Zitnik). Installation Clinic will officially run from 2pm to 5pm, but you are also welcome to come by any other time.</p>
 
-<p>Installation of Orange is operating-system specific, but common to Mac, Windows and Linux is that you need to install Orange, add ons for bioinformatics and network analysis, and few data files that we will use during the workshop.</p>
+<p>Installation of Orange is operating-system specific, but common to Mac, Windows and Linux is that you need to install Orange (step 1), add-ons for bioinformatics and network analysis (step 2), and few data files that we will use during the workshop (step 3).</p>
 
 <h3><a name="mac"></a>Step 1&2: Mac OS X</h3>
 
@@ -44,7 +44,7 @@ Following are instructions to install Orange data mining suite we will use at th
 
 <p><img src="image08.png" style="max-width:600px;"></p>
 
-<p>Your browser will most likely save the installation file (a file with a name similar to Orange-2.7.4.1-11941.dmg) in your Downloads folder. Open the installation file by double clicking on its icon. A window like the one below should open. Drag the Orange icon to your Application.</p>
+<p>Your browser will most likely save the installation file (a file with a name similar to Orange-2.7.4.1-11941.dmg) in your Downloads folder. Open the installation file by double clicking on its icon. A window like the one below should open. Drag the Orange icon to your Applications.</p>
 
 <p><img src="image01.png" style="max-width:300px;"></p>
 
@@ -111,17 +111,17 @@ Following are instructions to install Orange data mining suite we will use at th
 
 <p>Open a terminal and run the following commands.</p>
 
-<p>Install the necessary system packages</p>
+<p>Install the necessary system packages:</p>
 
 <pre><code>sudo apt-get update
 sudo apt-get install python-numpy libqt4-opengl-dev libqt4-dev cmake qt4-qmake python-sip-dev python-qt4 python-qt4-dev python-qwt5-qt4 python-sip graphviz python-networkx python-imaging python-qt4-gl build-essential python-pip python-scipy python-pyparsing ipython python-matplotlib</pre></code>
 
-<p>Install Orange (this step will take about 15 minutes)</p>
+<p>Install Orange (this step will take about 15 minutes):</p>
 
 <pre><code>sudo easy_install -U distribute # optional on Ubuntu 14.04
 sudo pip install --global-option="build_pyqt_ext" orange</pre></code>
 
-<p>Install network and bioinformatics add-ons</p>
+<p>Install network and bioinformatics add-ons:</p>
 
 <pre><code>sudo pip install slumber
 sudo pip install orange-bioinformatics
@@ -136,19 +136,19 @@ sudo pip install orange-network</pre></code>
 
 <p>Open a terminal and run the following commands.</p>
 
-<p>Install the necessary system packages</p>
+<p>Install the necessary system packages:</p>
 
 <pre><code>sudo yum update
 sudo yum groupinstall "KDE Software Development"
 sudo yum install numpy scipy python-matplotlib ipython python-pandas sympy python-nose pyparsing python-pip gcc gcc-c++ python-networkx PyQwt
 </pre></code>
 
-<p>Install Orange (this step will take about 15 minutes)</p>
+<p>Install Orange (this step will take about 15 minutes):</p>
 
 <pre><code>sudo bash -c 'export PATH=$PATH:/usr/lib64/qt4/bin/:/usr/lib/qt4/bin/ && pip install --global-option="build_pyqt_ext" orange'
 </pre></code>
 
-<p>Install network and bioinformatics add-ons</p>
+<p>Install network and bioinformatics add-ons:</p>
 
 <pre><code>sudo pip install slumber
 sudo pip install orange-bioinformatics
